@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <script src="/scripts/sg-cutup.min.js"></script>
+  <link rel="stylesheet" href="/styles/home.css">
+
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header>
+
+    	<nav>
+    		<ul>
+    			<li><a href="">one <i class="fa fa-phone"></i></a></li>
+    			<li><a href="">two</a></li>
+    			<li><a href="">three</a></li>
+    		</ul>
+    	</nav>
+
+    </header>
+    <div class="hero">
+      
+      <div class="well">
+        <span class="glyphicon glyphicon-ok"></span>
+      </div>
+
+      <select>
+        <option value="a">a</option>
+        <option value="b">b</option>
+        <option value="c">c</option>
+      </select>
+
+    </div>
+    <footer></footer>
+
+  </div>
+
+  <script>
+    $(function(){
+      $('.wrapper .hero .well').prepend('jquery loaded');
+      $('select').select2();
+    });
+  </script>
+
+</body>
+</html>
